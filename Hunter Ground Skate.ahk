@@ -24,5 +24,4 @@ F12::
   Sleep 100
   Send {Shift up} ; Sprint Key
   ExitApp
-  Return
 }

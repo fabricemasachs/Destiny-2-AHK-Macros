@@ -20,5 +20,4 @@ F12::
   sleep 25
   Send {f up} ; Super Key
   ExitApp
-  Return
 }

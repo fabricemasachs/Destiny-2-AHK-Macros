@@ -21,5 +21,4 @@ F12::
   Sleep 300
   Send {Space}
   ExitApp
-  Return
 }
