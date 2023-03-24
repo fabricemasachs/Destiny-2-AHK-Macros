@@ -16,10 +16,10 @@ F12::
   Sleep 600
   Send {%jumpKey%}
   Sleep 60
-  Send {%lightAttackKey%} ; Light Attack Key
+  Send {%lightAttackKey%}
   sleep 50
   Send {%jumpKey%}
-  Send {x} ; Air Move Key
+  Send {%airMoveKey%}
   Sleep 75
   Send {%jumpKey%}
   Send {%sprintKey% down}
