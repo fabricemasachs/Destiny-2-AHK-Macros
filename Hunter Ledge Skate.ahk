@@ -14,9 +14,9 @@ F12::
 {
   Send {%powerWeaponKey%}
   Sleep 500
-  Send {%heavySwingKey% down} ; Heavy Swing Key
+  Send {%heavySwingKey% down}
   Sleep 100
-  Send {%heavySwingKey% up} ; Heavy Swing Key
+  Send {%heavySwingKey% up}
   Send {%jumpKey%}
   Sleep 10
   Send {%airMoveKey%}

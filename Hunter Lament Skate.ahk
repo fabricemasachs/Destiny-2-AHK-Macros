@@ -18,7 +18,7 @@ F12::
   Sleep 5
   Send {%jumpKey% up}
   sleep 20
-  Send {LButton} ; Light Attack Key
+  Send {%lightAttackKey%}
   Send {%blockKey% up}
   Sleep 10
   Send {%jumpKey% down}
