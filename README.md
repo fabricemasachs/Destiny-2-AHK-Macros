@@ -5,3 +5,4 @@ Destiny 2 AutoHotKey Macros and Elgato Stream Deck as launcher
 
 You can download AutoHotkey <a href="https://www.autohotkey.com/">HERE</a>
 
+Note: Edit the file "Binding.ahk" to match the key bindings you used in Destiny 2
