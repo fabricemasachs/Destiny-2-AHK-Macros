@@ -20,9 +20,9 @@ F12::
     Sleep 2000
     Click
     Sleep 50
-    Send {w}
+    Send {%moveForwardKey%}
     Sleep 50
-    Send {s}
+    Send {%moveBackwardKey%}
     Sleep 4000
   }
 

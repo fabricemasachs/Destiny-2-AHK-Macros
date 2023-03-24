@@ -20,11 +20,11 @@ F12::
     Sleep 5000
     Send {LButton up}
     Sleep 50
-    Send {w}
+    Send {%moveForwardKey%}
     Sleep 50
-    Send {s}
+    Send {%moveForwardKey%}
     Sleep 50
-    Send {r}
+    Send {%reloadKey%}
     Sleep 2000
   }
 

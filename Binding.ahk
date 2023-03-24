@@ -3,6 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+moveForwardKey := "w"
+moveBackwardKey := "s"
 powerWeaponKey := "3"
 lightAttackKey := "LButton"
 heavySwingKey := "RButton"
@@ -10,3 +12,5 @@ superKey := "f"
 sprintKey := "Shift"
 jumpKey := "Space"
 airMoveKey := "x"
+blockKey := "c"
+reloadKey := "r"
