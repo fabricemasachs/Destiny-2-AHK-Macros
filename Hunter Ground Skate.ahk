@@ -1,7 +1,9 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#Include %A_ScriptDir%
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#Include Binding.ahk
 
 ;Hunter Ground Skate
 ;Subclass: Revenant
@@ -10,18 +12,18 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;Movement Ability: Triple Jump
 F12::
 {
-  Send {3} ; Power Weapon Key
+  Send {%powerWeaponKey%}
   Sleep 600
-  Send {Space}
+  Send {%jumpKey%}
   Sleep 60
-  Send {LButton} ; Light Attack Key
+  Send {%lightAttackKey%} ; Light Attack Key
   sleep 50
-  Send {Space}
+  Send {%jumpKey%}
   Send {x} ; Air Move Key
   Sleep 75
-  Send {Space}
-  Send {Shift down} ; Sprint Key
+  Send {%jumpKey%}
+  Send {%sprintKey% down}
   Sleep 100
-  Send {Shift up} ; Sprint Key
+  Send {%sprintKey% up}
   ExitApp
 }
