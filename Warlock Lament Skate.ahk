@@ -10,6 +10,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;Super Ability: Well of Radiance
 ;Aspects:
 ;Movement Ability: Burst Glide
+
 F12::
 {
   Send {%blockKey% down}

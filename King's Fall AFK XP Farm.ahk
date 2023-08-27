@@ -5,29 +5,26 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Warlock
-;Subclass: Voidwalker
-;Aspects:
-;Weapon: Auto Rifle
-;Exotic Armor: Sanguine Alchemy
-;Mission: In The Deep
-;Mission Location: The Moon
-;Mission Type: Shadowkeep Campaign
+;Titan
+;Subclass: Sunbreaker
+;Aspects: Roaring Flame (only)
+;Weapon: 
+;Exotic Armor: Ashen Wake
+;Mission: King's Fall Golg Maze
+;Mission Location: Legends
+;Mission Type: Raid
+;Bot: /join CPBot#6289
 
 F12::
 {
   Loop
   {
-    Send {%fireKey% down}
-    Sleep 5000
-    Send {%fireKey% up}
-    Sleep 50
+    Send {%grenadeKey%}
+    Sleep 1600
     Send {%moveForwardKey%}
-    Sleep 50
-    Send {%moveForwardKey%}
-    Sleep 50
-    Send {%reloadKey%}
-    Sleep 2000
+    Sleep 1000
+    Send {%moveBackwardKey%}
+    Sleep 1000
   }
 }
 

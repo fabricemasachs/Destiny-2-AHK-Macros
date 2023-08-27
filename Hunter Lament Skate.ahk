@@ -10,6 +10,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;Super Ability:
 ;Aspects: Touch of Winter / Shatterdive
 ;Movement Ability: Triple Jump
+
 F12::
 {
   Send {%blockKey% down}

@@ -8,8 +8,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;Titan Ledge Skate
 ;Subclass: Sentinel
 ;Super Ability: Ward of Dawn
-;Aspects:
-;Movement Ability:
+;Aspects: 
+;Movement Ability: 
+
 F12::
 {
   Send {%powerWeaponKey%}

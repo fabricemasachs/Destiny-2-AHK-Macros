@@ -27,9 +27,9 @@ F12::
     Send {%moveBackwardKey%}
     Sleep 4000
   }
+}
 
-  ^x::
-  {
-    ExitApp
-  }
+^x::
+{
+  ExitApp
 }
