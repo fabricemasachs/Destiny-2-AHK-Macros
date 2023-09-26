@@ -5,26 +5,23 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Hunter Ground Skate
+;Hunter Ledge Skate
 ;Subclass: Revenant
 ;Super Ability:
 ;Aspects: Touch of Winter / Shatterdive
 ;Movement Ability: Triple Jump
 
-F12::
+F4::
 {
   Send {%powerWeaponKey%}
-  Sleep 600
-  Send {%jumpKey%}
-  Sleep 60
-  Send {%lightAttackKey%}
-  sleep 50
-  Send {%jumpKey%}
-  Send {%airMoveKey%}
-  Sleep 75
-  Send {%jumpKey%}
-  Send {%sprintKey% down}
+  Sleep 500
+  Send {%heavySwingKey% down}
   Sleep 100
-  Send {%sprintKey% up}
+  Send {%heavySwingKey% up}
+  Send {%jumpKey%}
+  Sleep 10
+  Send {%airMoveKey%}
+  Sleep 300
+  Send {%jumpKey%}
   ExitApp
 }

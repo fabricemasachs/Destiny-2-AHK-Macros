@@ -5,22 +5,29 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Titan Ledge Skate
-;Subclass: Sentinel
-;Super Ability: Ward of Dawn
-;Aspects: 
-;Movement Ability: 
+/*
+Hunter Ground Skate
+Subclass: Revenant
+Super Ability:
+Aspects: Touch of Winter / Shatterdive
+Movement Ability: Triple Jump
+*/
 
-F12::
+F4::
 {
   Send {%powerWeaponKey%}
-  Sleep 500
-  Send {%heavySwingKey% down}
-  Sleep 10
-  Send {%superKey% down}
+  Sleep 600
+  Send {%jumpKey%}
+  Sleep 60
+  Send {%lightAttackKey%}
+  sleep 50
+  Send {%jumpKey%}
+  Send {%airMoveKey%}
+  Sleep 75
+  Send {%jumpKey%}
+  Send {%sprintKey% down}
   Sleep 100
-  Send {%heavySwingKey% up}
-  Sleep 25
-  Send {%superKey% up}
+  Send {%sprintKey% up}
+  
   ExitApp
 }

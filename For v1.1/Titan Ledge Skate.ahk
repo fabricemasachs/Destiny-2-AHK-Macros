@@ -5,30 +5,25 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Titan
-;Subclass: Sunbreaker
-;Aspects: Roaring Flame (only)
-;Weapon: 
-;Exotic Armor: Ashen Wake
-;Mission: King's Fall Golg Maze
-;Mission Location: Legends
-;Mission Type: Raid
-;Bot: /join CPBot#6289
+/*
+Titan Ledge Skate
+Subclass: Sentinel
+Super Ability: Ward of Dawn
+Aspects: 
+Movement Ability: 
+*/
 
-F12::
+F4::
 {
-  Loop
-  {
-    Send {%grenadeKey%}
-    Sleep 1600
-    Send {%moveForwardKey%}
-    Sleep 1000
-    Send {%moveBackwardKey%}
-    Sleep 1000
-  }
-}
-
-^x::
-{
+  Send {%powerWeaponKey%}
+  Sleep 500
+  Send {%heavySwingKey% down}
+  Sleep 10
+  Send {%superKey% down}
+  Sleep 100
+  Send {%heavySwingKey% up}
+  Sleep 25
+  Send {%superKey% up}
+  
   ExitApp
 }

@@ -5,31 +5,25 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Warlock
-;Subclass: Voidwalker
-;Aspects:
-;Weapon: Trinity Ghoul
-;Exotic Armor: Sanguine Alchemy
-;Mission: In The Deep
-;Mission Location: The Moon
-;Mission Type: Shadowkeep Campaign
+/*
+Warlock Ledge Skate
+Subclass: Dawnblade
+Super Ability: Well of Radiance
+Aspects:
+Movement Ability: Burst Glide
+*/
 
-F12::
+F4::
 {
-  Loop
-  {
-    Send {%fireKey%}
-    Sleep 2000
-    Send {%fireKey%}
-    Sleep 50
-    Send {%moveForwardKey%}
-    Sleep 50
-    Send {%moveBackwardKey%}
-    Sleep 4000
-  }
-}
-
-^x::
-{
+  Send {%powerWeaponKey%}
+  Sleep 500
+  Send {%heavySwingKey% down}
+  Sleep 100
+  Send {%heavySwingKey% up}
+  Send {%jumpKey%}
+  Send {%superKey%}
+  Sleep 100
+  Send {%jumpKey%}
+  
   ExitApp
 }

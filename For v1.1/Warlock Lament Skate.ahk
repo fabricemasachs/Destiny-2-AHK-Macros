@@ -5,27 +5,30 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Warlock Ground Skate
-;Subclass: Dawnblade
-;Super Ability: Well of Radiance
-;Aspects:
-;Movement Ability: Burst Glide
+/*
+Warlock Lament Skate
+Subclass: Dawnblade
+Super Ability: Well of Radiance
+Aspects:
+Movement Ability: Burst Glide
+*/
 
-F12::
+F4::
 {
-  Send {%powerWeaponKey%}
-  Sleep 600
-  Send {%jumpKey%}
-  Sleep 60
+  Send {%blockKey% down}
+  Sleep 500
+  Send {%jumpKey% down}
+  Sleep 5
+  Send {%jumpKey% up}
+  sleep 20
   Send {%lightAttackKey%}
-  Sleep 25
-  Send {%jumpKey%}
+  Send {%blockKey% up}
+  Sleep 10
+  Send {%jumpKey% down}
+  Sleep 5
+  Send {%jumpKey% up}
+  Sleep 10
   Send {%superKey%}
-  Sleep 50
-  Send {%jumpKey%}
-  Sleep 100
-  Send {%sprintKey% down}
-  Sleep 100
-  Send {%sprintKey% up}
+  
   ExitApp
 }

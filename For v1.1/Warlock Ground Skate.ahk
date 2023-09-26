@@ -5,27 +5,29 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include Binding.ahk
 
-;Hunter Lament Skate
-;Subclass: Revenant
-;Super Ability:
-;Aspects: Touch of Winter / Shatterdive
-;Movement Ability: Triple Jump
+/*
+Warlock Ground Skate
+Subclass: Dawnblade
+Super Ability: Well of Radiance
+Aspects:
+Movement Ability: Burst Glide
+*/
 
-F12::
+F4::
 {
-  Send {%blockKey% down}
-  Sleep 500
-  Send {%jumpKey% down}
-  Sleep 5
-  Send {%jumpKey% up}
-  sleep 20
+  Send {%powerWeaponKey%}
+  Sleep 600
+  Send {%jumpKey%}
+  Sleep 60
   Send {%lightAttackKey%}
-  Send {%blockKey% up}
-  Sleep 10
-  Send {%jumpKey% down}
-  Sleep 5
-  Send {%jumpKey% up}
-  Sleep 10
-  Send {x}
+  Sleep 25
+  Send {%jumpKey%}
+  Send {%superKey%}
+  Sleep 50
+  Send {%jumpKey%}
+  Sleep 100
+  Send {%sprintKey% down}
+  Sleep 100
+  Send {%sprintKey% up}
   ExitApp
 }
